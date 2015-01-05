@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tooth Growth Pitch</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Tooth Growth Pitch">
+  <meta name="author" content="Pilar Liria">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/outfont.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Tooth Growth Pitch</h1>
+    <h2>Descriptive Analysis</h2>
+    <p>Pilar Liria<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The objective is to show a shiny app which describe   the effect of Vitamin C in the growth of teeth. For it I&#39;m using the ToothGrowth dataset in R package.  </p>
+
+<p>The shiny app allows the user to choose some information as dose or supp or both and obtain the boxplot which describes the behaviour of the tooth length under these variables. </p>
+
+<p>The boxplot includes 3 variables: Y that always is len; X that could be dose or supp, and color that could be dose or supp.</p>
+
+<p>In addition the user can choose the option which describes general  statistics or statistitics of the length of the tooth (len) grouped by the doses and the way in which the supplement was administered (supp).</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The data <strong>ToothGrowth</strong> in R package, consists in 60 observations of 3 variables related with guinea pigs and the growth of its tooth under the influence of Vitamin C. The data variables are:</p>
+
+<ol>
+<li><em>len</em> which is tooth length (it is the <em>response variable</em>)</li>
+<li><em>supp</em> is the way in which the supplement was administered. The levels are <em>OJ (as orange juice)</em>, and <em>VC (as ascorbic acid)</em>.</li>
+<li><em>dose</em> of the supplement in miligrams (0.5, 1.0, and 2.0). </li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="ProjectFinal" style="background:;">
+  <hgroup>
+    <h2>ShinyApp</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><iframe src = 'https://mapilido74.shinyapps.io/ProjectFinal/' height='500px'></iframe></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Comments</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Len vs Dose</h3>
+
+<p>The box plots shows some kind of trend. It looks like as the dose is increased , the tooth length is bigger. </p>
+
+<h3>Len vs Dose and Supp</h3>
+
+<p>When the dose is 0.5 miligrams or 1 miligrams, the tooth length with OJ supplement  looks  bigger. On the other side if the supplement is 2.0 miligrams, the mean of tooth length in both cases (OJ and VC supp) looks like similar. However the spread in the case of VC is bigger. </p>
+
+<h3>Next Steps ...</h3>
+
+<p>The next step (not in this presentation) is to apply different techniques to verify if these differences in length are real!! (hypothesis testing, confidence intervals, .. ).  In addition we need to verify that the data meet the requirements to apply these techniques. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Data'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='ShinyApp'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Comments'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
